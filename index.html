@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermes Project - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div style="float: left; margin-right: 50px;">
+            <img src="company_logo.jpg" alt="Company Logo"
+                style="width: 100px; height: 100px; float: left; margin-right: 20px;">
+        </div>
+        <h1>Hermes- Tours and travels</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero">
+        <img src="slide1.jpg" class="active" alt="Slide 1">
+        <img src="slide2.jpg" alt="Slide 2">
+        <img src="slide3.jpg" alt="Slide 3">
+        <img src="slide4.jpg" alt="Slide 4">
+        <img src="slide5.jpg" alt="Slide 5">
+        <!--<img src="logo.jpg" class="logo" alt="Company Logo"> -->
+        <div class="buttons">
+            <button onclick="prevSlide()">&#60;</button>
+            <button onclick="nextSlide()">&#62;</button>
+        </div>
+    </div>
+    <div class="section about">
+        <img src="company_logo.jpg" alt="Company Image" style="width: 200px; height: 200px; float: left; margin-right: 100px;">"
+        <div>
+            <h2>About Us</h2>
+            <p>To sow the seeds of par-excellence services with customer centric approach and reap the trust of
+                worldwide clients. Our mission is to touch the horizon where our capabilities may successfully meet with
+                the
+                requirements of our clients, that too with ultimate transparency and cost-effectiveness.</p>
+        </div>
+    </div>
+    <div class="section sponsors">
+        <h2>Our Sponsors</h2>
+        <div class="logo-container" style="display: flex; justify-content: space-around;">
+            <img src="lays.jpg" alt="Sponsor 1">
+            <img src="samsung.jpg" alt="Sponsor 2">
+            <img src="lays.jpg" alt="Sponsor 3">
+            <img src="samsung.jpg" alt="Sponsor 4">
+            <img src="lays.jpg" alt="Sponsor 5">
+            <img src="samsung.jpg" alt="Sponsor 6">
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <section class="contact-form">
+                <h2>Contact</h2>
+                <form id="footerForm" onsubmit="return validateForm()">
+                    <input type="text" id="footerName" placeholder="Full Name" required>
+                    <input type="email" id="footerEmail" placeholder="Email" required>
+                    <textarea id="footerMessage" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+            <section class="sitemap">
+                <h2>Sitemap</h2>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </section>
+            <section class="contact-info">
+                <!--<img src="./amf1-logo-2024-white_-_Website_header.webp" alt="Company Image"
+                    style="width: 200px; height: auto;"> -->
+                <h2>Contact Us</h2>
+                <p>Email: <a href="mailto:info@hermes.com">info@hermes.com</a></p>
+                <p>Phone: <a href="tel:+123456789">+123456789</a></p>
+            </section>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Hermes. All rights reserved.
+        </div>
+    </footer>
+    
+</body>
+
+</html>
